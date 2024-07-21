@@ -1,0 +1,49 @@
+Activation Functions: ('relu', 'relu'), Accuracy: 92.28%
+Activation Functions: ('relu', 'tanh'), Accuracy: 89.58%
+Activation Functions: ('relu', 'sigmoid'), Accuracy: 90.58%
+Activation Functions: ('relu', 'softplus'), Accuracy: 90.88%
+Activation Functions: ('relu', 'softmax'), Accuracy: 86.67%
+Activation Functions: ('relu', 'selu'), Accuracy: 89.68%
+Activation Functions: ('relu', <keras.layers.advanced_activations.LeakyReLU object at 0x000001B06A652340>), Accuracy: 88.58%
+Activation Functions: ('tanh', 'relu'), Accuracy: 90.68%
+Activation Functions: ('tanh', 'tanh'), Accuracy: 91.68%
+Activation Functions: ('tanh', 'sigmoid'), Accuracy: 91.78%
+Activation Functions: ('tanh', 'softplus'), Accuracy: 91.38%
+Activation Functions: ('tanh', 'softmax'), Accuracy: 86.47%
+Activation Functions: ('tanh', 'selu'), Accuracy: 90.68%
+Activation Functions: ('tanh', <keras.layers.advanced_activations.LeakyReLU object at 0x000001B06A652340>), Accuracy: 89.58%
+Activation Functions: ('sigmoid', 'relu'), Accuracy: 87.27%
+Activation Functions: ('sigmoid', 'tanh'), Accuracy: 90.68%
+Activation Functions: ('sigmoid', 'sigmoid'), Accuracy: 90.98%
+Activation Functions: ('sigmoid', 'softplus'), Accuracy: 88.88%
+Activation Functions: ('sigmoid', 'softmax'), Accuracy: 76.35%
+Activation Functions: ('sigmoid', 'selu'), Accuracy: 88.78%
+Activation Functions: ('sigmoid', <keras.layers.advanced_activations.LeakyReLU object at 0x000001B06A652340>), Accuracy: 89.08%
+Activation Functions: ('softplus', 'relu'), Accuracy: 87.07%
+Activation Functions: ('softplus', 'tanh'), Accuracy: 89.48%
+Activation Functions: ('softplus', 'sigmoid'), Accuracy: 91.08%
+Activation Functions: ('softplus', 'softplus'), Accuracy: 89.68%
+Activation Functions: ('softplus', 'softmax'), Accuracy: 71.54%
+Activation Functions: ('softplus', 'selu'), Accuracy: 89.38%
+Activation Functions: ('softplus', <keras.layers.advanced_activations.LeakyReLU object at 0x000001B06A652340>), Accuracy: 88.18%
+Activation Functions: ('softmax', 'relu'), Accuracy: 89.18%
+Activation Functions: ('softmax', 'tanh'), Accuracy: 88.18%
+Activation Functions: ('softmax', 'sigmoid'), Accuracy: 84.27%
+Activation Functions: ('softmax', 'softplus'), Accuracy: 87.47%
+Activation Functions: ('softmax', 'softmax'), Accuracy: 81.86%
+Activation Functions: ('softmax', 'selu'), Accuracy: 87.78%
+Activation Functions: ('softmax', <keras.layers.advanced_activations.LeakyReLU object at 0x000001B06A652340>), Accuracy: 88.98%
+Activation Functions: ('selu', 'relu'), Accuracy: 90.48%
+Activation Functions: ('selu', 'tanh'), Accuracy: 89.48%
+Activation Functions: ('selu', 'sigmoid'), Accuracy: 90.08%
+Activation Functions: ('selu', 'softplus'), Accuracy: 88.68%
+Activation Functions: ('selu', 'softmax'), Accuracy: 82.97%
+Activation Functions: ('selu', 'selu'), Accuracy: 85.17%
+Activation Functions: ('selu', <keras.layers.advanced_activations.LeakyReLU object at 0x000001B06A652340>), Accuracy: 84.27%
+Activation Functions: (<keras.layers.advanced_activations.LeakyReLU object at 0x000001B06A652340>, 'relu'), Accuracy: 90.88%
+Activation Functions: (<keras.layers.advanced_activations.LeakyReLU object at 0x000001B06A652340>, 'tanh'), Accuracy: 92.18%
+Activation Functions: (<keras.layers.advanced_activations.LeakyReLU object at 0x000001B06A652340>, 'sigmoid'), Accuracy: 91.28%
+Activation Functions: (<keras.layers.advanced_activations.LeakyReLU object at 0x000001B06A652340>, 'softplus'), Accuracy: 91.48%
+Activation Functions: (<keras.layers.advanced_activations.LeakyReLU object at 0x000001B06A652340>, 'softmax'), Accuracy: 86.67%
+Activation Functions: (<keras.layers.advanced_activations.LeakyReLU object at 0x000001B06A652340>, 'selu'), Accuracy: 91.68%
+Activation Functions: (<keras.layers.advanced_activations.LeakyReLU object at 0x000001B06A652340>, <keras.layers.advanced_activations.LeakyReLU object at 0x000001B06A652340>), Accuracy: 87.88%

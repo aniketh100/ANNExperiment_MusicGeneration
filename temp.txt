@@ -1,0 +1,57 @@
+c:/Users/Aniketh/PycharmProjects/programfolder2/MI_Codes/Hackathon/test.csv
+
+
+'''
+y_true = pd.read_csv('c:/Users/Aniketh/PycharmProjects/programfolder2/MI_Codes/Hackathon/ground_truth.csv')
+y_true = y_true.drop(columns = ['Usage'])
+y_true.to_csv('c:/Users/Aniketh/PycharmProjects/programfolder2/MI_Codes/Hackathon/ground2.csv', index = False)
+y_true = y_true.drop(y_true.index[0])
+x2 = ann_submission_df.drop(ann_submission_df.index[0])
+accuracy = accuracy_score(y_true, x2)
+print(f'Accuracy: {accuracy * 100:.2f}%')
+'''
+
+'''
+# Build the RNN model (LSTM)
+sequence_length = 10
+X_train_reshaped = X_train_scaled.reshape(X_train_scaled.shape[0], X_train_scaled.shape[1], 1)
+X_val_reshaped = X_val_scaled.reshape(X_val_scaled.shape[0], X_val_scaled.shape[1], 1)
+
+rnn_model = Sequential()
+rnn_model.add(LSTM(units=128, input_shape=(X_train_scaled.shape[1], 1)))
+#rnn_model.add(LSTM(units = 64))
+rnn_model.add(Dense(units=len(label_encoder.classes_), activation='softmax'))
+
+# Compile the RNN model
+rnn_model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+
+# Train the RNN model
+rnn_model.fit(X_train_reshaped, y_train, epochs=100, batch_size=20)
+
+# Load the test data
+test_data = pd.read_csv('c:/Users/Aniketh/PycharmProjects/programfolder2/MI_Codes/Hackathon/test.csv')
+
+# Extract features for test data and scale them
+# Exclude 'id' column from test data
+test_data_features = scaler.transform(test_data.drop(columns=['id']))
+
+# Reshape the test data for the RNN model
+test_data_features_reshaped = test_data_features.reshape(test_data_features.shape[0], test_data_features.shape[1], 1)
+
+# Use the trained ANN model to make predictions
+ann_predictions = ann_model.predict(test_data_features)
+
+# Use the trained RNN model to make predictions
+rnn_predictions = rnn_model.predict(test_data_features_reshaped)
+
+# Get the predicted labels (class with the highest probability) for both models
+ann_predicted_labels = ann_predictions.argmax(axis=1)
+rnn_predicted_labels = rnn_predictions.argmax(axis=1)
+
+# Create DataFrames for the predictions
+ann_submission_df = pd.DataFrame({'id': test_data['id'], 'label': ann_predicted_labels})
+rnn_submission_df = pd.DataFrame({'id': test_data['id'], 'label': rnn_predicted_labels})
+
+# Save the submission DataFrames to CSV files
+rnn_submission_df.to_csv('c:/Users/Aniketh/PycharmProjects/programfolder2/MI_Codes/Hackathon/music_genre_rnn_predictions.csv', index=False)
+'''
